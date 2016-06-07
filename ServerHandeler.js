@@ -1,4 +1,5 @@
 function server(wich, update, roomtype) { 
+  //start copy
 var server = { // just copy this varible for the ligit function for minipulation 
 getroom:function(Z) {
 //this is one of the most vauble of the classfunctions the sheet is for a google sheet then it will be able to minipulate the sheet with server capibility
@@ -138,7 +139,11 @@ range.setValues([['0', '', '', '', '']]);
 
 }
 }
-};   
+}; 
+//end copy
+//
+//
+//
 if (wich == 1) {
 return server.getroom(update);
 } else if (wich == 2) {
