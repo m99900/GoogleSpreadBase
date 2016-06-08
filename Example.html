@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+  <div id="out"></div>
+  <script>
+var u;
+var i;
+function onSuccess(test) {
+u = test;
+i = test;
+document.getElementById("out").innerHTML = u;
+google.script.run.withSuccessHandler(onSuccess2).server(1,u);
+}
+function onSuccess2(test) {
+u = test;
+var junck = u.length - 1;
+
+document.getElementById("out").innerHTML = "the last number of the current user: "+i;
+google.script.run.server(3,[i,Math.random(),u,u]);
+}
+google.script.run.server(4, 3);
+google.script.run.withSuccessHandler(onSuccess).server(2);
+
+    </script>
+  </body>
+</html>
