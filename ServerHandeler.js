@@ -76,7 +76,8 @@ var range = sheet.getRange(t666);
 var junck = et[1];
 var junck2 = et[2];
 var junck3 = et[3];
-var test = [[junck, junck2, "", junck3, ""]];
+var junck4 = et[4];
+var test = [[junck, junck2, junck3, junck4, ""]];
 range.setValues(test);
  SpreadsheetApp.flush();
 },
